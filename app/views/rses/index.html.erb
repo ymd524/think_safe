@@ -1,0 +1,21 @@
+<h1>Listing rses</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rses.each do |rse| %>
+  <tr>
+    <td><%= link_to 'Show', rse %></td>
+    <td><%= link_to 'Edit', edit_rse_path(rse) %></td>
+    <td><%= link_to 'Destroy', rse, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rsis', new_rse_path %>

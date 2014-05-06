@@ -1,0 +1,21 @@
+<h1>Listing smas</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @smas.each do |sma| %>
+  <tr>
+    <td><%= link_to 'Show', sma %></td>
+    <td><%= link_to 'Edit', edit_sma_path(sma) %></td>
+    <td><%= link_to 'Destroy', sma, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sma', new_sma_path %>

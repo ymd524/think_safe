@@ -1,0 +1,15 @@
+# MySQL.  Versions 4.1 and 5.0 are recommended.
+
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: think_safe_development
+  username: think_safe
+  password: think_safe2014
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: think_safe_production
+  username: think_safe
+  password: think_safe2014
